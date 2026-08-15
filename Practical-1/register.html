@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login Form</title>
+</head>
+
+<body>
+    <table align="center">
+        <tr bgcolor="lightblue">
+            <th><b>Registration Form </b></th>
+
+        </tr>
+    </table>
+    <br>
+    <form action="first.html" method="get">
+        <table>
+
+
+            <tr>
+                <td>Username: <br></td>
+                <td><input type="text" autofocus required placeholder="Enter username" name="n1" id="n1" /> <br /></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" autofocus title="Only single digit numbers" placeholder="Enter Password"
+                        pattern="[0-9 {5}]" required name="" id="txtpsd" /> <br /></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+
+                <td><input type="radio" required value="Male" id="gen" name="gen">Male</td>
+                <td><input type="radio" required value="Female" id="gen" name="gen">Female</td>
+
+            </tr>
+
+            <tr>
+                <td>Mobile:</td>
+                <td><input type="text" autofocus required placeholder="Enter Mobile Number" title="Only Digits"
+                        pattern="[0-9]" id="txtnum" maxlength="10" /> <br /></td>
+            </tr>
+            <br>
+            <tr>
+                <td>Select Role:</td>
+                <td>
+                    <select name="Select Role" id="">
+                        <option value="">--Select Role--</option>
+                        <option value="Student">Student</option>
+                        <option value="Faculty">Faculty</option>
+                        <option value="Adminstrator">Adminstrator</option>
+                    </select>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>Click Here:</td>
+                <td> <input type="submit" value="Login" name="" id="btnlogin" />
+                </td>
+
+            </tr>
+
+
+        </table>
+    </form>
+
+
+
+</body>
+
+</html>

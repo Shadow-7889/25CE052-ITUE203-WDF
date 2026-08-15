@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Selecting DOM Elements</h1>
+        <h2 id="Welcome title">Welcome</h2>
+        
+        <p class="notice">Exam form opens Monday.</p>
+        
+        <p class="notice">Workshop registration is active.</p>
+
+        <p class="notice">Library timmings changed.</p>
+  
+    <button class="Selectfirstnotice" type="button">Select first notice</button>
+    <button class="Selectallnotice" type="button">Select all notices</button>
+    <button id="Clear" type="button">Clear</button>
+  </main>
+  <div>
+    class="card";
+    
+  </div>
+<script>
+   
+    const button = document.getElementsByClassName("Selectfirstnotice");
+
+    button.addEventListener("click", function () {
+        const firstNotice = document.querySelector(".notice");
+        firstNotice.style.backgroundColor = "yellow";
+    });
+    
+
+</script>
+</body>
+</html>
