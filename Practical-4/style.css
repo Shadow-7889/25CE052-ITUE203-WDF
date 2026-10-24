@@ -1,0 +1,556 @@
+:root {
+    --bg: #f3f6fb;
+    --surface: #ffffff;
+    --text: #182235;
+    --muted: #5b667a;
+    --primary: #2457d6;
+    --accent: #dbeafe;
+    --border: #d9e1ee;
+    --shadow: 0 8px 24px rgba(24, 34, 53, .08);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    padding: clamp(12px, 3vw, 32px);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: var(--bg);
+    color: var(--text);
+    max-width: 1500px;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.25;
+}
+
+h2 {
+    margin-top: 24px;
+}
+
+a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+    text-decoration: underline;
+}
+
+body > h1:first-child,
+body > header,
+body > h1[align="center"] {
+    background: linear-gradient(120deg, #183a8a, #3976ed);
+    color: white;
+    padding: 22px;
+    border-radius: 16px;
+    text-align: center;
+    margin: 0 0 18px;
+}
+
+body > hr {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 22px 0;
+}
+
+body > a {
+    display: inline-block;
+    margin: 4px 6px 4px 0;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 18px auto;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+    font-size: clamp(12px, 1.2vw, 15px);
+}
+
+th,
+td {
+    border: 1px solid var(--border);
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: #e6efff;
+    color: #17336f;
+}
+
+tr:nth-child(even) td {
+    background: rgba(220, 232, 250, .35);
+}
+
+.responsive-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+input,
+select,
+textarea,
+button {
+    font: inherit;
+    max-width: 100%;
+}
+
+input,
+select,
+textarea {
+    padding: 9px 11px;
+    border: 1px solid #b8c4d8;
+    border-radius: 7px;
+    background: var(--surface);
+    color: var(--text);
+}
+
+button {
+    padding: 9px 14px;
+    border: 0;
+    border-radius: 8px;
+    background: var(--primary);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(1.08);
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    padding-left: 24px;
+}
+
+body > p:last-child {
+    color: var(--muted);
+}
+
+.container {
+    width: 100%;
+    max-width: 850px;
+    margin: 24px auto;
+}
+
+.container > h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#registrationForm {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: clamp(16px, 3vw, 28px);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+}
+
+#registrationForm .form-group {
+    display: grid;
+    grid-template-columns: 170px minmax(0, 1fr);
+    align-items: start;
+    column-gap: 14px;
+    row-gap: 6px;
+    margin-bottom: 17px;
+}
+
+#registrationForm .form-group > label {
+    padding-top: 9px;
+    font-weight: 600;
+}
+
+#registrationForm .form-group > input:not([type="radio"]):not([type="checkbox"]),
+#registrationForm .form-group > select,
+#registrationForm .form-group > textarea {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    min-height: 42px;
+    padding: 10px 12px;
+    border: 1px solid #b8c4d8;
+    border-radius: 7px;
+    background: var(--surface);
+    color: var(--text);
+}
+
+#registrationForm input:focus-visible,
+#registrationForm select:focus-visible,
+#registrationForm button:focus-visible {
+    outline: 2px solid #3976ed;
+    outline-offset: 2px;
+}
+
+#registrationForm .error,
+#registrationForm .form-group > span[id$="Error"] {
+    grid-column: 2;
+    display: block;
+    color: #dc2626;
+    font-size: 13px;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+}
+
+#registrationForm .password-strength,
+#registrationForm #passwordStrength,
+#registrationForm #strengthMessage {
+    grid-column: 2;
+}
+
+#registrationForm .gender-box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px 18px;
+    padding-top: 8px;
+}
+
+#registrationForm .gender-box label {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0;
+    font-weight: normal;
+}
+
+#registrationForm .gender-box input[type="radio"] {
+    width: auto;
+    margin: 0;
+}
+
+#registrationForm .form-group.terms {
+    display: block;
+    margin-left: 184px;
+}
+
+#registrationForm .terms label {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    font-weight: normal;
+}
+
+#registrationForm .terms input[type="checkbox"] {
+    flex: 0 0 auto;
+    margin-top: 6px;
+}
+
+#registrationForm .button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-left: 184px;
+}
+
+#registrationForm .button-group input {
+    width: auto;
+    min-width: 95px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#registrationForm .button-group input[type="submit"] {
+    background: var(--primary);
+    color: #ffffff;
+}
+
+#registrationForm .button-group input[type="reset"] {
+    background: #e2e8f0;
+    color: #182235;
+}
+
+#registrationForm .button-group input:hover {
+    filter: brightness(.95);
+}
+
+#practical4Topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 10px 14px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    margin-bottom: 12px;
+}
+
+#p4NavLinks {
+    display: none;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+#p4NavLinks.open {
+    display: flex;
+}
+
+#p4NavLinks a {
+    padding: 7px 10px;
+    border-radius: 7px;
+    background: var(--accent);
+}
+
+#p4Notice {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: center;
+    background: #fff4ce;
+    color: #5b4100;
+    padding: 10px 14px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+#p4Notice button {
+    background: #7a5b00;
+}
+
+.p4-section {
+    background: var(--surface);
+    padding: clamp(16px, 3vw, 26px);
+    margin: 20px 0;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+}
+
+.p4-slider {
+    position: relative;
+    min-height: 180px;
+    background: linear-gradient(120deg, #183a8a, #3976ed);
+    color: white;
+    padding: 28px;
+    border-radius: 14px;
+}
+
+.p4-slide {
+    display: none;
+}
+
+.p4-slide.active {
+    display: block;
+}
+
+.p4-slider-controls {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.p4-faq-item {
+    border-bottom: 1px solid var(--border);
+    padding: 10px 0;
+}
+
+.p4-faq-item > button {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.p4-faq-answer {
+    padding: 8px 12px;
+    color: var(--muted);
+}
+
+#p4ModalBackdrop {
+    position: fixed;
+    inset: 0;
+    background: #101828aa;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    z-index: 1000;
+}
+
+#p4ModalBackdrop.open {
+    display: flex;
+}
+
+#p4Modal {
+    max-width: 520px;
+    width: 100%;
+    background: var(--surface);
+    color: var(--text);
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+}
+
+.p4-modal-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.p4-modal-head h2 {
+    margin: 0;
+}
+
+.p4-modal-head button {
+    background: #64748b;
+}
+
+.p4-theme-dark {
+    --bg: #101827;
+    --surface: #192538;
+    --text: #edf3ff;
+    --muted: #c0cbe0;
+    --primary: #8ab4ff;
+    --accent: #243a5d;
+    --border: #33435b;
+    --shadow: 0 8px 24px rgba(0, 0, 0, .22);
+}
+
+.p4-theme-dark th {
+    background: #263d60;
+    color: #edf3ff;
+}
+
+.p4-theme-dark tr:nth-child(even) td {
+    background: #1d2c42;
+}
+
+.p4-theme-dark #p4Notice {
+    background: #493d1b;
+    color: #ffedb0;
+}
+
+@media (min-width: 900px) {
+    body {
+        padding: 28px 5vw;
+    }
+
+    body > h1:first-child,
+    body > h1[align="center"] {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    body > h1:first-child,
+    body > h1[align="center"] {
+        padding: 16px;
+        font-size: 1.55rem;
+    }
+
+    body > a {
+        padding: 7px 9px;
+        font-size: .92rem;
+    }
+
+    th,
+    td {
+        padding: 7px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    #practical4Topbar {
+        align-items: flex-start;
+    }
+
+    #p4NavLinks {
+        flex-direction: column;
+    }
+
+    #p4NavLinks a {
+        display: block;
+    }
+
+    .p4-slider {
+        padding: 18px;
+        min-height: 200px;
+    }
+
+    /* Stack registration labels above inputs on mobile */
+    #registrationForm .form-group {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 6px;
+    }
+
+    #registrationForm .form-group > label {
+        padding-top: 0;
+    }
+
+    #registrationForm .form-group > input:not([type="radio"]):not([type="checkbox"]),
+    #registrationForm .form-group > select,
+    #registrationForm .form-group > textarea {
+        width: 100%;
+    }
+
+    #registrationForm .form-group > span[id$="Error"],
+    #registrationForm .error,
+    #registrationForm .password-strength,
+    #registrationForm #passwordStrength,
+    #registrationForm #strengthMessage {
+        grid-column: 1;
+    }
+
+    #registrationForm .form-group.terms,
+    #registrationForm .button-group {
+        margin-left: 0;
+    }
+
+    #registrationForm .gender-box {
+        padding-top: 4px;
+    }
+}
+
+@media (max-width: 360px) {
+    #registrationForm {
+        padding: 12px;
+    }
+
+    #registrationForm .gender-box {
+        gap: 10px;
+    }
+
+    #registrationForm .button-group input {
+        min-width: 80px;
+    }
+}
