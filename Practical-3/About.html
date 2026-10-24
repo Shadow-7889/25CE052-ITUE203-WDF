@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>About Us - StudentHub</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+
+        header {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 15px 5%;
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        nav h1 {
+            font-size: 26px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #facc15;
+        }
+
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 25px;
+        }
+
+        .content,
+        .sidebar {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+        }
+
+        .content p {
+            margin-bottom: 15px;
+        }
+
+        .sidebar ul {
+            padding-left: 20px;
+        }
+
+
+        footer {
+            text-align: center;
+            background-color: #1e3a8a;
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+                margin: 15px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <nav>
+            <h1>StudentHub</h1>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="timetable.html">Timetable</a></li>
+                <li><a href="results.html">Results</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="content">
+            <h2>About StudentHub</h2>
+
+            <p>
+                StudentHub is a student portal designed to help students
+                access important academic information in one place.
+            </p>
+
+            <p>
+                Students can view their timetable, check results,
+                access notices, and manage academic activities easily.
+            </p>
+
+            <p>
+                The website uses CSS Flexbox and CSS Grid to create a
+                responsive layout that works on desktops, tablets, and mobiles.
+            </p>
+        </section>
+
+        <aside class="sidebar">
+            <h2>Our Features</h2>
+            <ul>
+                <li>Student Dashboard</li>
+                <li>Class Timetable</li>
+                <li>Examination Results</li>
+                <li>Notice Board</li>
+                <li>Student Feedback</li>
+            </ul>
+        </aside>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2026 StudentHub. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

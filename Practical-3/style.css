@@ -1,0 +1,281 @@
+:root {
+    --bg: #f3f6fb;
+    --surface: #fff;
+    --text: #182235;
+    --muted: #5b667a;
+    --primary: #2457d6;
+    --accent: #dbeafe;
+    --border: #d9e1ee;
+    --shadow: 0 8px 24px rgba(24, 34, 53, .08);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: clamp(12px, 3vw, 32px);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: var(--bg);
+    color: var(--text);
+    max-width: 1500px;
+    margin-inline: auto;
+}
+
+body > h1:first-child,
+body > header,
+body > h1[align="center"] {
+    background: linear-gradient(120deg, #183a8a, #3976ed);
+    color: white;
+    padding: 22px;
+    border-radius: 16px;
+    text-align: center;
+    margin: 0 0 18px;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.25;
+}
+
+h2 {
+    margin-top: 24px;
+}
+
+a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+body > hr {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 22px 0;
+}
+
+body > a {
+    display: inline-block;
+    margin: 4px 6px 4px 0;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 18px auto;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+    font-size: clamp(12px, 1.2vw, 15px);
+}
+
+th,
+td {
+    border: 1px solid var(--border);
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: #e6efff;
+    color: #17336f;
+}
+
+tr:nth-child(even) td {
+    background: rgba(220, 232, 250, .35);
+}
+
+form {
+    width: 100%;
+    max-width: 850px;
+    margin: 20px auto;
+    background: var(--surface);
+    padding: clamp(14px, 3vw, 26px);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+}
+
+input,
+select,
+textarea,
+button {
+    font: inherit;
+    max-width: 100%;
+}
+
+input,
+select,
+textarea {
+    padding: 9px 11px;
+    border: 1px solid #b8c4d8;
+    border-radius: 7px;
+    background: var(--surface);
+    color: var(--text);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 1px;
+}
+
+form label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+form input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]):not([type="button"]),
+form select,
+form textarea {
+    display: block;
+    width: 100%;
+    min-width: 0;
+}
+
+form p {
+    margin: 0 0 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 16px;
+    min-width: 0;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.form-row .form-group {
+    margin-bottom: 0;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    max-width: none;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+form input[type="submit"],
+form input[type="reset"],
+form input[type="button"] {
+    display: inline-block;
+    width: auto;
+    padding: 9px 16px;
+    border: 0;
+    border-radius: 8px;
+    background: var(--primary);
+    color: #fff;
+    cursor: pointer;
+}
+
+button {
+    padding: 9px 14px;
+    border: 0;
+    border-radius: 8px;
+    background: var(--primary);
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover,
+form input[type="submit"]:hover,
+form input[type="reset"]:hover,
+form input[type="button"]:hover {
+    filter: brightness(1.08);
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    padding-left: 24px;
+}
+
+body > p:last-child {
+    color: var(--muted);
+}
+
+.responsive-table {
+    overflow-x: auto;
+}
+
+body:has(table td[colspan]),
+body:has(table th[colspan]) {
+    overflow-wrap: anywhere;
+}
+
+table:has(th[colspan="9"]) {
+    min-width: 900px;
+}
+
+body:has(th[colspan="9"]) table {
+    display: block;
+    overflow-x: auto;
+    white-space: normal;
+}
+
+body:has(th[colspan="9"]) table tr {
+    width: max-content;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    body > h1:first-child,
+    body > header,
+    body > h1[align="center"] {
+        padding: 16px;
+        border-radius: 12px;
+    }
+
+    form {
+        padding: 14px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 7px;
+    }
+}

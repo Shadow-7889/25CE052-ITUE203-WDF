@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - StudentHub</title>
+    <style>
+ 
+header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 15px 5%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav h1 {
+    font-size: 26px;
+    white-space: nowrap;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 14px;
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+nav ul li a:hover {
+    background-color: #ffffff;
+    color: #1e3a8a;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 5px;
+    }
+
+    nav ul li a {
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>StudentHub</h1>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="timetable.html">Timetable</a></li>
+                <li><a href="results.html">Results</a></li>
+                <li><a href="Events.html">Events</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-heading">
+        <h2>Upcoming College Events</h2>
+        <p>Explore activities, workshops, and events at StudentHub.</p>
+    </section>
+
+    <main class="events-container">
+
+        <article class="event-card">
+            <h3>Technical Workshop</h3>
+            <p class="event-date">Date: 25 October 2026</p>
+            <p>
+                Learn programming concepts and explore new technologies
+                through practical activities.
+            </p>
+            <a href="feedback.html">Know More</a>
+        </article>
+
+        <article class="event-card">
+            <h3>Annual Sports Day</h3>
+            <p class="event-date">Date: 5 November 2026</p>
+            <p>
+                Participate in exciting sports competitions and
+                showcase your teamwork and sportsmanship.
+            </p>
+            <a href="feedback.html">Know More</a>
+        </article>
+
+        <article class="event-card">
+            <h3>Cultural Festival</h3>
+            <p class="event-date">Date: 15 November 2026</p>
+            <p>
+                Enjoy music, dance, art, and cultural performances
+                organized by students.
+            </p>
+            <a href="feedback.html">Know More</a>
+        </article>
+
+        <article class="event-card">
+            <h3>Hackathon</h3>
+            <p class="event-date">Date: 22 November 2026</p>
+            <p>
+                Collaborate with other students to develop creative
+                solutions to real-world problems.
+            </p>
+            <a href="feedback.html">Know More</a>
+        </article>
+
+        <article class="event-card">
+            <h3>Career Guidance Seminar</h3>
+            <p class="event-date">Date: 28 November 2026</p>
+            <p>
+                Get career advice, explore professional opportunities,
+                and learn about industry expectations.
+            </p>
+            <a href="feedback.html">Know More</a>
+        </article>
+
+        <article class="event-card">
+            <h3>Project Exhibition</h3>
+            <p class="event-date">Date: 5 December 2026</p>
+            <p>
+                Present innovative projects and share your ideas
+                with students and faculty members.
+            </p>
+            <a href="feedback.html">Know More</a>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 StudentHub. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
