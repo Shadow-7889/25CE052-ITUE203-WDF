@@ -1,0 +1,104 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container{
+    width: 450px;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+h2{
+    text-align: center;
+    color: #333;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.gender-box{
+    margin-top: 5px;
+}
+
+.gender-box input{
+    margin-right: 5px;
+}
+
+.checkbox-group{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox-group label{
+    margin: 0;
+}
+
+.button-group{
+    text-align: center;
+}
+
+.button-group input{
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-group input[type="submit"]{
+    background-color: #28a745;
+    color: white;
+}
+
+.button-group input[type="reset"]{
+    background-color: #dc3545;
+    color: white;
+}
+
+.button-group input:hover{
+    opacity: 0.9;
+}
+
+
+
+/* Practical-5: accessible registration validation */
+.container { max-width: 450px; width: 100%; box-sizing: border-box; }
+input:focus, select:focus, button:focus { outline: 3px solid #80bdff; outline-offset: 2px; }
+.field-error { display: block; min-height: 1.1em; margin-top: 4px; color: #b42318; font-size: 0.9rem; }
+input[aria-invalid="true"], select[aria-invalid="true"] { border: 2px solid #b42318; }
+.password-meter { margin-top: 7px; font-size: 0.9rem; }
+.password-meter-track { height: 8px; background: #e5e7eb; border-radius: 5px; overflow: hidden; margin-top: 4px; }
+.password-meter-fill { height: 100%; width: 0; transition: width .2s ease; background: #dc3545; }
+.terms-row { display: flex; align-items: flex-start; gap: 8px; margin: 12px 0; }
+.terms-row input { margin-top: 4px; }
+.form-status { padding: 10px; margin: 12px 0; border-radius: 5px; }
+.form-status.success { background: #e8f7ed; color: #176b35; }
+.form-status.error { background: #fff0f0; color: #8a1c1c; }
+@media (max-width: 520px) { body { padding: 12px; } .container { padding: 18px; } }

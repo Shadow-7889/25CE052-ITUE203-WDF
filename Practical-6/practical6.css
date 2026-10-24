@@ -1,0 +1,29 @@
+/* Practical 6 styles */
+.p6-header { background: linear-gradient(135deg,#173b80,#3676d8); color:#fff; text-align:center; padding:20px; border-radius:14px; }
+.p6-header h1 { background:transparent; color:#fff; margin:0; padding:0; }
+.p6-header p { margin:8px 0 0; }
+.p6-nav { display:flex; flex-wrap:wrap; gap:8px; margin:16px 0 24px; }
+.p6-nav a { background:#fff; border:1px solid #d5dce5; border-radius:8px; padding:8px 12px; text-decoration:none; font-weight:600; }
+.p6-nav a[aria-current="page"], .p6-nav a:hover { background:#2457a7; color:#fff; }
+.p6-main { max-width:1200px; margin:0 auto; }
+.p6-intro,.p6-controls,.p6-notes { background:#fff; padding:20px; border:1px solid #dce3ed; border-radius:12px; margin-bottom:18px; }
+.p6-intro h2 { margin-top:0; }
+.p6-controls { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:14px; }
+.p6-controls .control { min-width:0; }
+.p6-controls label { display:block; margin-bottom:6px; font-weight:700; }
+.p6-controls input,.p6-controls select { width:100%; min-width:0; padding:10px; border:1px solid #bdc9d9; border-radius:7px; background:#fff; font:inherit; }
+.status { padding:12px 14px; background:#eaf2ff; border-radius:8px; margin:14px 0; }
+.status.error { background:#fff0f0; color:#8a1c1c; }
+.results-summary { color:#536174; margin:12px 0; }
+.record-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr)); gap:16px; }
+.record-card { background:#fff; border:1px solid #dce3ed; border-radius:12px; padding:18px; box-shadow:0 4px 12px rgba(20,40,70,.06); overflow-wrap:anywhere; }
+.record-card h3 { color:#244779; margin:0 0 10px; }
+.record-card p { margin:7px 0; }
+.record-meta { color:#536174; font-size:.92rem; }
+.category-pill { display:inline-block; background:#e6efff; color:#204d94; border-radius:999px; padding:3px 10px; font-size:.82rem; font-weight:700; margin-bottom:8px; }
+.pagination { display:flex; justify-content:center; align-items:center; gap:16px; margin:22px 0; }
+.pagination button { min-width:105px; }
+.pagination button:disabled { opacity:.45; cursor:not-allowed; }
+.p6-footer { text-align:center; color:#657187; padding:16px; }
+.p6-notes code { background:#eef2f7; padding:2px 5px; border-radius:4px; }
+@media(max-width:600px) { body { padding:12px; } .p6-header { padding:16px; } .p6-header h1 { font-size:25px; } .p6-intro,.p6-controls,.p6-notes { padding:14px; } .pagination { gap:8px; } .pagination button { min-width:auto; } }

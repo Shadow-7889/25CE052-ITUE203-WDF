@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "question": "How do I register on StudentHub?",
+    "answer": "Open the Register page, complete every required field, accept the terms and submit the form.",
+    "category": "Account"
+  },
+  {
+    "id": 2,
+    "question": "Where can I find my timetable?",
+    "answer": "Choose Timetable from the navigation menu to view the published schedule.",
+    "category": "Academics"
+  },
+  {
+    "id": 3,
+    "question": "How can I check notices?",
+    "answer": "Open the Notices page. Use search and category filters to find a notice.",
+    "category": "Academics"
+  },
+  {
+    "id": 4,
+    "question": "How do I register for an event?",
+    "answer": "Open the Events page, search or filter the list, then follow the organizer instructions.",
+    "category": "Events"
+  },
+  {
+    "id": 5,
+    "question": "What if I forget my password?",
+    "answer": "Contact the university help desk or follow the official account recovery procedure.",
+    "category": "Account"
+  },
+  {
+    "id": 6,
+    "question": "Can I search and sort records?",
+    "answer": "Yes. Use the search box, category filter, sort selector and pagination controls on the data page.",
+    "category": "Website"
+  },
+  {
+    "id": 7,
+    "question": "Who can help with course selection?",
+    "answer": "Contact your academic advisor or department office for course-related guidance.",
+    "category": "Academics"
+  },
+  {
+    "id": 8,
+    "question": "Does this practical save data to a server?",
+    "answer": "No. This is a front-end demonstration that fetches static JSON files and renders them in the browser.",
+    "category": "Website"
+  }
+]

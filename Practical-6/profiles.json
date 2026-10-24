@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Aarav Patel",
+    "enrollment": "26CE001",
+    "course": "B.Tech Computer Engineering",
+    "year": 2,
+    "email": "aarav.patel@example.com"
+  },
+  {
+    "id": 2,
+    "name": "Diya Shah",
+    "enrollment": "26CE002",
+    "course": "B.Tech Computer Engineering",
+    "year": 2,
+    "email": "diya.shah@example.com"
+  },
+  {
+    "id": 3,
+    "name": "Rohan Mehta",
+    "enrollment": "26IT003",
+    "course": "B.Tech Information Technology",
+    "year": 1,
+    "email": "rohan.mehta@example.com"
+  },
+  {
+    "id": 4,
+    "name": "Anaya Desai",
+    "enrollment": "26AIML004",
+    "course": "B.Tech AI & ML",
+    "year": 3,
+    "email": "anaya.desai@example.com"
+  },
+  {
+    "id": 5,
+    "name": "Vivaan Joshi",
+    "enrollment": "26CE005",
+    "course": "B.Tech Computer Engineering",
+    "year": 4,
+    "email": "vivaan.joshi@example.com"
+  },
+  {
+    "id": 6,
+    "name": "Sara Khan",
+    "enrollment": "26BCA006",
+    "course": "BCA",
+    "year": 1,
+    "email": "sara.khan@example.com"
+  }
+]

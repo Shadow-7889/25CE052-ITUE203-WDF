@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "Web Development Workshop",
+    "category": "Workshop",
+    "date": "2026-11-05",
+    "venue": "CSPIT Computer Lab 2",
+    "description": "Hands-on HTML, CSS, JavaScript and responsive design workshop.",
+    "organizer": "WDF Club"
+  },
+  {
+    "id": 2,
+    "title": "Coding Challenge",
+    "category": "Competition",
+    "date": "2026-11-10",
+    "venue": "Main Computer Lab",
+    "description": "Solve programming problems and improve problem-solving skills.",
+    "organizer": "Coding Club"
+  },
+  {
+    "id": 3,
+    "title": "Tech Talk: AI in Education",
+    "category": "Seminar",
+    "date": "2026-11-14",
+    "venue": "Seminar Hall",
+    "description": "Explore practical applications of artificial intelligence in education.",
+    "organizer": "AIML Department"
+  },
+  {
+    "id": 4,
+    "title": "Sports Day Registration",
+    "category": "Sports",
+    "date": "2026-11-18",
+    "venue": "University Sports Ground",
+    "description": "Register for athletics and team sports events.",
+    "organizer": "Sports Committee"
+  },
+  {
+    "id": 5,
+    "title": "Project Exhibition",
+    "category": "Exhibition",
+    "date": "2026-11-22",
+    "venue": "CSPIT Auditorium",
+    "description": "Showcase student projects, prototypes and innovative ideas.",
+    "organizer": "Student Council"
+  },
+  {
+    "id": 6,
+    "title": "Cybersecurity Awareness",
+    "category": "Seminar",
+    "date": "2026-11-27",
+    "venue": "Room A-204",
+    "description": "Learn about passwords, phishing, privacy and online safety.",
+    "organizer": "Cyber Security Club"
+  },
+  {
+    "id": 7,
+    "title": "Data Structures Bootcamp",
+    "category": "Workshop",
+    "date": "2026-12-02",
+    "venue": "Programming Lab 1",
+    "description": "Revise arrays, searching, sorting, stacks and queues with practice.",
+    "organizer": "CE Department"
+  },
+  {
+    "id": 8,
+    "title": "Annual Cultural Fest",
+    "category": "Cultural",
+    "date": "2026-12-08",
+    "venue": "University Amphitheatre",
+    "description": "Music, dance, art and performances by students.",
+    "organizer": "Cultural Committee"
+  },
+  {
+    "id": 9,
+    "title": "Resume Building Session",
+    "category": "Workshop",
+    "date": "2026-12-12",
+    "venue": "Placement Cell",
+    "description": "Prepare a clear resume and learn interview basics.",
+    "organizer": "Career Development Cell"
+  },
+  {
+    "id": 10,
+    "title": "Semester Project Review",
+    "category": "Academic",
+    "date": "2026-12-16",
+    "venue": "Department Classrooms",
+    "description": "Project demonstrations and feedback from faculty.",
+    "organizer": "CE Department"
+  },
+  {
+    "id": 11,
+    "title": "Open Source Meet-up",
+    "category": "Competition",
+    "date": "2026-12-19",
+    "venue": "Innovation Centre",
+    "description": "Discuss open-source contribution and collaborative development.",
+    "organizer": "Developer Community"
+  },
+  {
+    "id": 12,
+    "title": "Library Orientation",
+    "category": "Academic",
+    "date": "2026-12-22",
+    "venue": "Central Library",
+    "description": "Discover library resources, e-books and research databases.",
+    "organizer": "Library Team"
+  }
+]

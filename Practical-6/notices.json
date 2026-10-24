@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "date": "2026-10-25",
+    "title": "Internal Assessment Schedule",
+    "category": "Examination",
+    "description": "Check the department notice board for the updated internal assessment timetable."
+  },
+  {
+    "id": 2,
+    "date": "2026-10-28",
+    "title": "Library Book Return",
+    "category": "Library",
+    "description": "Students should return or renew borrowed books before the due date."
+  },
+  {
+    "id": 3,
+    "date": "2026-11-01",
+    "title": "Workshop Registration Open",
+    "category": "Events",
+    "description": "Registration is open for upcoming technical workshops."
+  },
+  {
+    "id": 4,
+    "date": "2026-11-04",
+    "title": "Fee Payment Reminder",
+    "category": "Administration",
+    "description": "Please check your student portal for fee payment details and deadlines."
+  },
+  {
+    "id": 5,
+    "date": "2026-11-08",
+    "title": "Campus Cleanliness Drive",
+    "category": "Campus",
+    "description": "Volunteers are invited to participate in the campus cleanliness drive."
+  },
+  {
+    "id": 6,
+    "date": "2026-11-12",
+    "title": "Project Synopsis Submission",
+    "category": "Academic",
+    "description": "Submit your project synopsis to your assigned faculty guide."
+  },
+  {
+    "id": 7,
+    "date": "2026-11-15",
+    "title": "Holiday Notice",
+    "category": "Holiday",
+    "description": "Please refer to the academic calendar for holiday details."
+  }
+]

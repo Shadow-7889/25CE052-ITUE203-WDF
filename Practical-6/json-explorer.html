@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentHub | JSON Data Explorer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="practical6.css">
+</head>
+
+<body>
+  <header class="p6-header">
+    <h1>StudentHub Portal</h1>
+  </header>
+  <nav class="p6-nav" aria-label="Main navigation">
+    <a href="index.html">Home</a><a href="register.html">Register</a><a href="json-explorer.html"
+      aria-current="page">JSON Data Explorer</a><a href="notice.html">Existing Notice Page</a><a
+      href="profile.html">Existing Profile Page</a>
+  </nav>
+  <main class="p6-main">
+    <section class="p6-intro">
+      <h2>Explore StudentHub Data</h2>
+      <p>Select external JSON data, then search, filter, sort and move through pages. The records are fetched from
+        separate JSON files using the Fetch API.</p>
+    </section>
+    <section class="p6-controls" aria-label="Data controls">
+      <div class="control"><label for="dataType">Choose data</label><select id="dataType">
+          <option value="events">Events</option>
+          <option value="notices">Notices</option>
+          <option value="profiles">Student Profiles</option>
+          <option value="faqs">FAQs</option>
+        </select></div>
+      <div class="control"><label for="searchInput">Search records</label><input id="searchInput" type="search"
+          placeholder="Search by keyword..."></div>
+      <div class="control"><label for="categoryFilter">Filter category</label><select id="categoryFilter">
+          <option value="all">All categories</option>
+        </select></div>
+      <div class="control"><label for="sortBy">Sort by</label><select id="sortBy">
+          <option value="default">Default order</option>
+          <option value="title-asc">Title / name (A–Z)</option>
+          <option value="title-desc">Title / name (Z–A)</option>
+          <option value="date-asc">Date / year (oldest first)</option>
+          <option value="date-desc">Date / year (newest first)</option>
+        </select></div>
+      <div class="control"><label for="pageSize">Records per page</label><select id="pageSize">
+          <option value="3">3</option>
+          <option value="5" selected>5</option>
+          <option value="10">10</option>
+        </select></div>
+    </section>
+    <div id="statusMessage" class="status" role="status" aria-live="polite">Loading data…</div>
+    <div id="resultsSummary" class="results-summary"></div>
+    <section id="recordList" class="record-grid" aria-live="polite"></section>
+    <nav class="pagination" aria-label="Results pages"><button id="prevBtn" type="button">← Previous</button><span
+        id="pageInfo">Page 1</span><button id="nextBtn" type="button">Next →</button></nav>
+    
+  </main>
+  <footer class="p6-footer">© 2026 StudentHub Portal</footer>
+  <script src="json-explorer.js" defer></script>
+</body>
+
+</html>
