@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #263238;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(135deg, #2457a7, #4285f4);
+    padding: 25px 15px;
+    border-radius: 10px;
+    margin-top: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #244779;
+    margin-top: 25px;
+}
+
+h3 {
+    color: #244779;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #d5dce5;
+    margin: 20px 0;
+}
+
+body > a,
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #2457a7;
+    background-color: #ffffff;
+    padding: 8px 12px;
+    margin: 3px 2px;
+    border: 1px solid #d5dce5;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+body > a:hover,
+nav a:hover {
+    background-color: #2457a7;
+    color: #ffffff;
+}
+
+a {
+    color: #2457a7;
+}
+
+a:focus {
+    outline: 3px solid #80bdff;
+    outline-offset: 2px;
+}
+
+ul,
+ol {
+    padding-left: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff;
+}
+
+th,
+td {
+    border: 1px solid #d5dce5;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #2457a7;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #eef3fa;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 25px auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+}
+
+form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid #c7d0dc;
+    border-radius: 5px;
+    font: inherit;
+    background-color: #ffffff;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: 3px solid #80bdff;
+    outline-offset: 2px;
+}
+
+.gender-box {
+    margin-top: 5px;
+}
+
+.gender-box input {
+    margin-right: 5px;
+}
+
+.gender-box label {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox-group label {
+    margin: 0;
+}
+
+.terms-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 12px 0;
+}
+
+.terms-row input {
+    margin-top: 5px;
+}
+
+.terms-row label {
+    margin: 0;
+}
+
+.button-group {
+    text-align: center;
+}
+
+.button-group input {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-group input[type="submit"] {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+.button-group input[type="reset"] {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.button-group input:hover {
+    opacity: 0.9;
+}
+
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2457a7;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.field-error {
+    display: block;
+    min-height: 1.1em;
+    margin-top: 4px;
+    color: #b42318;
+    font-size: 0.9rem;
+}
+
+input[aria-invalid="true"],
+select[aria-invalid="true"] {
+    border: 2px solid #b42318;
+}
+
+.password-meter {
+    margin-top: 7px;
+    font-size: 0.9rem;
+}
+
+.password-meter-track {
+    height: 8px;
+    background: #e5e7eb;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 4px;
+}
+
+.password-meter-fill {
+    height: 100%;
+    width: 0;
+    transition: width 0.2s ease;
+    background-color: #dc3545;
+}
+
+.form-status {
+    padding: 10px;
+    margin: 12px 0;
+    border-radius: 5px;
+}
+
+.form-status.success {
+    background-color: #e8f7ed;
+    color: #176b35;
+}
+
+.form-status.error {
+    background-color: #fff0f0;
+    color: #8a1c1c;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    h1 {
+        padding: 18px 12px;
+        font-size: 26px;
+    }
+
+    .container {
+        padding: 18px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    body > a,
+    nav a {
+        margin-bottom: 6px;
+    }
+}
