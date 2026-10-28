@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "name": "Aarav Patel",
+    "course": "BCA",
+    "department": "Computer Engineering",
+    "year": 2,
+    "email": "aarav.patel@student.charusat.edu.in"
+  },
+  {
+    "id": 2,
+    "name": "Diya Shah",
+    "course": "B.Sc IT",
+    "department": "Computer Engineering",
+    "year": 3,
+    "email": "diya.shah@student.charusat.edu.in"
+  },
+  {
+    "id": 3,
+    "name": "Kabir Mehta",
+    "course": "MCA",
+    "department": "Computer Engineering",
+    "year": 4,
+    "email": "kabir.mehta@student.charusat.edu.in"
+  },
+  {
+    "id": 4,
+    "name": "Isha Desai",
+    "course": "B.Tech",
+    "department": "Computer Engineering",
+    "year": 1,
+    "email": "isha.desai@student.charusat.edu.in"
+  },
+  {
+    "id": 5,
+    "name": "Rohan Joshi",
+    "course": "BCA",
+    "department": "Computer Engineering",
+    "year": 2,
+    "email": "rohan.joshi@student.charusat.edu.in"
+  },
+  {
+    "id": 6,
+    "name": "Meera Trivedi",
+    "course": "B.Sc IT",
+    "department": "Computer Engineering",
+    "year": 3,
+    "email": "meera.trivedi@student.charusat.edu.in"
+  },
+  {
+    "id": 7,
+    "name": "Vivaan Pandya",
+    "course": "MCA",
+    "department": "Computer Engineering",
+    "year": 4,
+    "email": "vivaan.pandya@student.charusat.edu.in"
+  },
+  {
+    "id": 8,
+    "name": "Anaya Modi",
+    "course": "B.Tech",
+    "department": "Computer Engineering",
+    "year": 1,
+    "email": "anaya.modi@student.charusat.edu.in"
+  },
+  {
+    "id": 9,
+    "name": "Krish Vyas",
+    "course": "BCA",
+    "department": "Computer Engineering",
+    "year": 2,
+    "email": "krish.vyas@student.charusat.edu.in"
+  },
+  {
+    "id": 10,
+    "name": "Nisha Rana",
+    "course": "B.Sc IT",
+    "department": "Computer Engineering",
+    "year": 3,
+    "email": "nisha.rana@student.charusat.edu.in"
+  },
+  {
+    "id": 11,
+    "name": "Arjun Bhatt",
+    "course": "MCA",
+    "department": "Computer Engineering",
+    "year": 4,
+    "email": "arjun.bhatt@student.charusat.edu.in"
+  },
+  {
+    "id": 12,
+    "name": "Pooja Solanki",
+    "course": "B.Tech",
+    "department": "Computer Engineering",
+    "year": 1,
+    "email": "pooja.solanki@student.charusat.edu.in"
+  },
+  {
+    "id": 13,
+    "name": "Dev Parmar",
+    "course": "BCA",
+    "department": "Computer Engineering",
+    "year": 2,
+    "email": "dev.parmar@student.charusat.edu.in"
+  },
+  {
+    "id": 14,
+    "name": "Riya Thakkar",
+    "course": "B.Sc IT",
+    "department": "Computer Engineering",
+    "year": 3,
+    "email": "riya.thakkar@student.charusat.edu.in"
+  },
+  {
+    "id": 15,
+    "name": "Harsh Gandhi",
+    "course": "MCA",
+    "department": "Computer Engineering",
+    "year": 4,
+    "email": "harsh.gandhi@student.charusat.edu.in"
+  },
+  {
+    "id": 16,
+    "name": "Sneha Chauhan",
+    "course": "B.Tech",
+    "department": "Computer Engineering",
+    "year": 1,
+    "email": "sneha.chauhan@student.charusat.edu.in"
+  },
+  {
+    "id": 17,
+    "name": "Yash Dave",
+    "course": "BCA",
+    "department": "Computer Engineering",
+    "year": 2,
+    "email": "yash.dave@student.charusat.edu.in"
+  },
+  {
+    "id": 18,
+    "name": "Tanvi Raval",
+    "course": "B.Sc IT",
+    "department": "Computer Engineering",
+    "year": 3,
+    "email": "tanvi.raval@student.charusat.edu.in"
+  },
+  {
+    "id": 19,
+    "name": "Manav Kadam",
+    "course": "MCA",
+    "department": "Computer Engineering",
+    "year": 4,
+    "email": "manav.kadam@student.charusat.edu.in"
+  },
+  {
+    "id": 20,
+    "name": "Kavya Nair",
+    "course": "B.Tech",
+    "department": "Computer Engineering",
+    "year": 1,
+    "email": "kavya.nair@student.charusat.edu.in"
+  }
+]

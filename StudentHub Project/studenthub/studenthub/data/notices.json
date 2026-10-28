@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "title": "Semester examinations schedule announced",
+    "category": "Academic",
+    "date": "2026-08-02",
+    "description": "Semester examinations schedule announced. Please check the notice board for details."
+  },
+  {
+    "id": 2,
+    "title": "Assignment submission deadline notice",
+    "category": "Holiday",
+    "date": "2026-08-03",
+    "description": "Assignment submission deadline notice. Please check the notice board for details."
+  },
+  {
+    "id": 3,
+    "title": "College closed for Independence Day",
+    "category": "Sports",
+    "date": "2026-08-04",
+    "description": "College closed for Independence Day. Please check the notice board for details."
+  },
+  {
+    "id": 4,
+    "title": "Annual sports registration open",
+    "category": "Placement",
+    "date": "2026-08-05",
+    "description": "Annual sports registration open. Please check the notice board for details."
+  },
+  {
+    "id": 5,
+    "title": "Placement drive for final year",
+    "category": "Exam",
+    "date": "2026-08-06",
+    "description": "Placement drive for final year. Please check the notice board for details."
+  },
+  {
+    "id": 6,
+    "title": "Library timing changed",
+    "category": "Academic",
+    "date": "2026-08-07",
+    "description": "Library timing changed. Please check the notice board for details."
+  },
+  {
+    "id": 7,
+    "title": "Lab manual submission reminder",
+    "category": "Holiday",
+    "date": "2026-08-08",
+    "description": "Lab manual submission reminder. Please check the notice board for details."
+  },
+  {
+    "id": 8,
+    "title": "Fee payment last date",
+    "category": "Sports",
+    "date": "2026-08-09",
+    "description": "Fee payment last date. Please check the notice board for details."
+  },
+  {
+    "id": 9,
+    "title": "Guest lecture on cloud computing",
+    "category": "Placement",
+    "date": "2026-08-10",
+    "description": "Guest lecture on cloud computing. Please check the notice board for details."
+  },
+  {
+    "id": 10,
+    "title": "Hackathon registration open",
+    "category": "Exam",
+    "date": "2026-08-11",
+    "description": "Hackathon registration open. Please check the notice board for details."
+  },
+  {
+    "id": 11,
+    "title": "Revaluation form available",
+    "category": "Academic",
+    "date": "2026-08-12",
+    "description": "Revaluation form available. Please check the notice board for details."
+  },
+  {
+    "id": 12,
+    "title": "Mid-semester timetable released",
+    "category": "Holiday",
+    "date": "2026-08-13",
+    "description": "Mid-semester timetable released. Please check the notice board for details."
+  },
+  {
+    "id": 13,
+    "title": "Scholarship applications invited",
+    "category": "Sports",
+    "date": "2026-08-14",
+    "description": "Scholarship applications invited. Please check the notice board for details."
+  },
+  {
+    "id": 14,
+    "title": "Industrial visit announcement",
+    "category": "Placement",
+    "date": "2026-08-15",
+    "description": "Industrial visit announcement. Please check the notice board for details."
+  },
+  {
+    "id": 15,
+    "title": "ID card collection notice",
+    "category": "Exam",
+    "date": "2026-08-16",
+    "description": "ID card collection notice. Please check the notice board for details."
+  },
+  {
+    "id": 16,
+    "title": "Result declaration of internal exam",
+    "category": "Academic",
+    "date": "2026-08-17",
+    "description": "Result declaration of internal exam. Please check the notice board for details."
+  }
+]
