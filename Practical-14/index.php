@@ -1,5 +1,5 @@
 <?php
-// Practical 14: Admin dashboard with RBAC, SQL aggregation, latest registrations and audit log
+
 $pageTitle = 'Admin Dashboard';
 require_once __DIR__ . '/includes/auth.php';
 require_role('admin');
