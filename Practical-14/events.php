@@ -1,11 +1,11 @@
 <?php
-// Practical 12: Event management CRUD with poster upload and file validation
+
 $pageTitle = 'Manage Events';
 require_once __DIR__ . '/includes/auth.php';
 require_role('admin');
 $cats = ['General', 'Workshop', 'Hackathon', 'Seminar', 'Cultural', 'Sports'];
 const POSTER_DIR_REL = '/uploads/posters/';
-function save_poster($file, &$err) {      // returns null (no file), false (error) or the new file name
+function save_poster($file, &$err) {      
     if (($file['error'] ?? UPLOAD_ERR_NO_FILE) === UPLOAD_ERR_NO_FILE) return null;
     if ($file['error'] !== UPLOAD_ERR_OK) { $err = 'Upload failed (error code ' . $file['error'] . ').'; return false; }
     if ($file['size'] > 2 * 1024 * 1024) { $err = 'Poster must be 2 MB or smaller.'; return false; }
