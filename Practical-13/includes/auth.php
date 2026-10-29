@@ -4,7 +4,7 @@ if (session_status() === PHP_SESSION_NONE) {
     session_set_cookie_params(['lifetime' => 0, 'path' => '/', 'httponly' => true, 'samesite' => 'Lax']);
     session_start();
 }
-const SESSION_TIMEOUT = 1800; // 30 minutes of inactivity
+const SESSION_TIMEOUT = 1800; 
 if (isset($_SESSION['user_id'])) {
     if (time() - ($_SESSION['last_activity'] ?? 0) > SESSION_TIMEOUT) {
         $_SESSION = [];
@@ -48,10 +48,10 @@ function audit($conn, $action, $details = '') {
     $s = $conn->prepare('INSERT INTO audit_logs (user_id, action, details) VALUES (?, ?, ?)');
     if ($s) { $s->bind_param('iss', $uid, $action, $details); $s->execute(); $s->close(); }
 }
-// Append one row to a CSV file safely (Practical 7). Header is written when the file is new.
+
 function save_csv($file, array $header, array $row) {
     $path = __DIR__ . '/../storage/' . $file;
-    $row = array_map(fn($v) => preg_match('/^[=+\-@]/', $v) ? "'" . $v : $v, $row); // CSV-injection guard
+    $row = array_map(fn($v) => preg_match('/^[=+\-@]/', $v) ? "'" . $v : $v, $row); 
     $fh = fopen($path, 'a');
     if ($fh === false) return false;
     flock($fh, LOCK_EX);
