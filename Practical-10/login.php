@@ -1,5 +1,4 @@
 <?php
-// Practical 10: secure login with sessions, password_verify, session id regeneration, role-based redirect
 $pageTitle = 'Login';
 require_once 'includes/auth.php';
 if (is_logged_in()) { redirect(is_admin() ? HOME_ADMIN : HOME_STUDENT); }
