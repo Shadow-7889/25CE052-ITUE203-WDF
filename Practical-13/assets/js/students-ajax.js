@@ -1,4 +1,3 @@
-// Practical 13: AJAX / Fetch based CRUD against api/students.php
 (function () {
     var app = document.getElementById('ajaxApp');
     if (!app) return;
