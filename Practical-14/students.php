@@ -1,5 +1,5 @@
 <?php
-// Practical 11: Student management CRUD with search, filter and pagination (mysqli prepared statements)
+
 $pageTitle = 'Manage Students';
 require_once __DIR__ . '/includes/auth.php';
 require_role('admin');
@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $row = $s->get_result()->fetch_assoc(); $s->close();
     if ($row) { $form = array_map('strval', $row); }
 }
-// search + filter + pagination
+
 $q = trim($_GET['q'] ?? ''); $cf = trim($_GET['course'] ?? '');
 $page = max(1, (int)($_GET['page'] ?? 1)); $per = 8;
 $where = ' WHERE 1=1'; $types = ''; $args = [];
