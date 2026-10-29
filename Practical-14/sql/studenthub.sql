@@ -1,4 +1,3 @@
--- StudentHub database (Practicals 8-14). Import in phpMyAdmin.
 DROP DATABASE IF EXISTS studenthub;
 CREATE DATABASE studenthub CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE studenthub;
@@ -57,7 +56,7 @@ CREATE TABLE audit_logs (
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;
 
--- Demo logins: admin@studenthub.local / Admin@123 ; student@studenthub.local / Student@123
+
 INSERT INTO users (name,email,mobile,gender,password_hash,role) VALUES
 ('Administrator','admin@studenthub.local','9000000001','Other','$6$onwkE7GRMdhdJEgZ$GQaND1tZGwh/hI38FLhEv0IziX6i12sQLrNpqIZu2rP5rf/piFVcCRuIjAWzCo2Jfjys31RLuyYyHmmUZfyef.','admin'),
 ('Demo Student','student@studenthub.local','9000000002','Other','$6$GA2RH/R4eJwfpUSN$pAHa4CZRIm7wDytV1bGHy212doN/Lh4Y5JvwTM0agAUrczu6LxJfSFALWWQDULQIdoh.SSEGojgBIz9Nj036I/','student');
