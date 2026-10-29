@@ -1,4 +1,3 @@
-// StudentHub global UI behaviour (Practical 4): notification, hamburger, theme, FAQ, modal, slider
 document.addEventListener('DOMContentLoaded', function () {
     var root = document.documentElement;
 
