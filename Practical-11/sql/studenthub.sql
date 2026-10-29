@@ -1,4 +1,3 @@
--- StudentHub database (Practicals 8-14). Import in phpMyAdmin.
 DROP DATABASE IF EXISTS studenthub;
 CREATE DATABASE studenthub CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE studenthub;
