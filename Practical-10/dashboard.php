@@ -1,5 +1,4 @@
 <?php
-// Practical 10: protected student dashboard (login required, admins are redirected to the admin panel)
 $pageTitle = 'Student Dashboard';
 require_once __DIR__ . '/includes/auth.php';
 require_login();
