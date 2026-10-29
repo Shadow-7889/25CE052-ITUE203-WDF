@@ -1,5 +1,4 @@
 <?php
-// Practical 9: secure registration (mysqli, duplicate check, password_hash, server-side validation)
 $pageTitle = 'Register'; $extraJs = ['validation.js'];
 require_once 'includes/auth.php';
 $courses = ['B.Tech', 'BCA', 'B.Sc IT', 'MCA'];
@@ -19,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!in_array($v['gender'], ['Male', 'Female', 'Other'], true)) $errors['gender'] = 'Please select your gender.';
     if (empty($_POST['terms'])) $errors['terms'] = 'You must accept the terms and conditions.';
 
-    if (!$errors) {   // duplicate email check
+    if (!$errors) {  
         $chk = $conn->prepare('SELECT user_id FROM users WHERE email = ? UNION SELECT student_id FROM students WHERE email = ?');
         $chk->bind_param('ss', $v['email'], $v['email']);
         $chk->execute(); $chk->store_result();
