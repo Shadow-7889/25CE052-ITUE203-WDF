@@ -1,4 +1,3 @@
-// Registration form validation with regular expressions (Practical 5)
 (function () {
     var form = document.getElementById('registrationForm');
     if (!form) return;
