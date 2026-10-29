@@ -1,5 +1,4 @@
 <?php
-// Practical 13: JSON API for students (GET list/search, POST add/update/delete) - admin only
 require_once __DIR__ . '/../includes/auth.php';
 header('Content-Type: application/json; charset=utf-8');
 function out($code, $ok, $msg, $data = null) {
